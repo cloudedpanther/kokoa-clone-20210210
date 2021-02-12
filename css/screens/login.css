@@ -24,11 +24,13 @@
   margin: 0px 24px;
 }
 .login-form input {
-  padding: 20px 0px;
   border: none;
-  border-bottom: 1.3px solid rgba(0, 0, 0, 0.2);
   font-size: 16px;
   font-weight: 500;
+}
+.login-form input:not([type="submit"]) {
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
 }
 .login-form input[type="password"] {
@@ -42,9 +44,19 @@
 .login-form input:focus {
   border-color: var(--red);
 }
-.login-form input[type="button"] {
-  border: none;
+.login-form input[type="submit"] {
   margin-top: 14px;
   padding: 18px 0px;
-  background-color: var(--red);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-form input[name="login"] {
+  background-color: #55efc4;
+}
+.login-form input[name="signup"] {
+  background-color: #f39c12;
+}
+.login-form a {
+  text-align: center;
+  margin-top: 20px;
 }
