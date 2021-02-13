@@ -1,0 +1,37 @@
+.friends-screen {
+  margin: 0px 20px;
+}
+.friends-display {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.friends-display span {
+  margin: 0px 5px;
+  font-weight: 400;
+}
+.friends-display i {
+  color: rgba(0, 0, 0, 0.2);
+}
+.friends-display .fa-chevron-right {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.friends-screen__section {
+  margin-top: 16px;
+  padding: 15px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.friends-screen__section-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}

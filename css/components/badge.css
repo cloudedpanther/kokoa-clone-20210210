@@ -1,0 +1,11 @@
+.badge {
+  color: white;
+  background-color: tomato;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.badge__hidden {
+  background-color: white;
+}

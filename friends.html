@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Friends</title>
+    <title>PokeTalk - Friends</title>
   </head>
   <body>
     <!-- Status Bar -->
@@ -26,55 +26,193 @@
 
     <!-- Friends Screen Header -->
     <header class="screen-header">
-      <h1 class="screen-header__title"></h1>
+      <h1 class="screen-header__title">Friends</h1>
       <div class="screen-header__icons">
-        <!-- search icon -->
-        <!-- music icon -->
-        <!-- cog icon -->
+        <i class="fas fa-search fa-sm"></i>
+        <i class="fas fa-music fa-sm"></i>
+        <i class="fas fa-cog fa-sm"></i>
       </div>
     </header>
 
     <!-- Friends Display -->
     <div class="friends-display">
-      <!-- information icon -->
+      <i class="fas fa-info-circle"></i>
       <span>Friend's Names Display</span>
-      <!-- chevron right icon -->
+      <i class="fas fa-chevron-right fa-sm"></i>
     </div>
 
     <main class="friends-screen">
       <!-- My User Component -->
       <div class="user-component">
         <div class="user-component__column">
-          <img src="#" />
+          <img
+            class="user-component__avatar user-component__avatar--lg"
+            src="screenshots/pikachu.jpg"
+          />
           <div class="user-component__text">
-            <h3 class="user-component__title">Pikachu</h3>
+            <h3 class="user-component__title user-component__title--bold">
+              Pikachu
+            </h3>
           </div>
         </div>
-        <!-- <div class="user-component__column"></div> -->
+        <div class="user-component__column">
+          <div class="user-component__music">
+            <span class="user-component__music-title">
+              Imagine Dragons - Thunder
+            </span>
+            <i class="fas fa-play fa-sm"></i>
+          </div>
+        </div>
       </div>
 
       <!-- Channel -->
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
+      <div class="friends-screen__section">
+        <div class="friends-screen__section-header">
           <span>Channel</span>
-          <!-- chevron up icon -->
+          <i class="fas fa-chevron-up"></i>
         </div>
 
         <!-- Channel User Component -->
         <div class="user-component">
           <div class="user-component__column">
-            <img src="#" />
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="screenshots/pokemon-ball.png"
+            />
             <div class="user-component__text">
               <h3 class="user-component__title">Channel</h3>
             </div>
           </div>
           <div class="user-component__column">
-            <span>2</span>
-            <!-- chevron right -->
+            <span>2 <i class="fas fa-chevron-right fa-sm"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Friends List -->
+      <div class="friends-screen__section">
+        <div class="friends-screen__section-header">
+          <span>Friends</span>
+          <i class="fas fa-chevron-up"></i>
+        </div>
+
+        <!-- Friends' User Components -->
+        <!-- first friend -->
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="screenshots/bulbasaur.jfif"
+            />
+            <div class="user-component__text">
+              <h3 class="user-component__title">Bulbasaur</h3>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div class="user-component__music">
+              <span class="user-component__music-title">
+                Tom Jones - Green Green Grass Of Home
+              </span>
+              <i class="fas fa-play fa-sm"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-component__space"></div>
+
+        <!-- second friend -->
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="screenshots/charmander.jfif"
+            />
+            <div class="user-component__text">
+              <h3 class="user-component__title">Charmander</h3>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div class="user-component__music">
+              <span class="user-component__music-title"> BTS - FIRE </span>
+              <i class="fas fa-play fa-sm"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-component__space"></div>
+
+        <!-- third friend -->
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="screenshots/evee.jfif"
+            />
+            <div class="user-component__text">
+              <h3 class="user-component__title">Eevee</h3>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div class="user-component__music">
+              <span class="user-component__music-title">
+                Pearl Jam - Do The Evolution
+              </span>
+              <i class="fas fa-play fa-sm"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-component__space"></div>
+
+        <!-- fourth friend -->
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="screenshots/squirtle.jpg"
+            />
+            <div class="user-component__text">
+              <h3 class="user-component__title">Squirtle</h3>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div class="user-component__music">
+              <span class="user-component__music-title">
+                Stargate - Waterfall
+              </span>
+              <i class="fas fa-play fa-sm"></i>
+            </div>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- navigation bar -->
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a class="nav__a" href="friends.html"
+            ><i class="fas fa-user fa-lg"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="chats.html"
+            ><i class="far fa-comment fa-lg"></i
+          ></a>
+          <div class="badge nav__notification">1</div>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="find.html"
+            ><i class="fas fa-search fa-lg"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="more.html"
+            ><i class="fas fa-ellipsis-h fa-lg"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
 
     <!-- Font Awesome: For Icons -->
     <script
