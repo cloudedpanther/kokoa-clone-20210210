@@ -1,0 +1,109 @@
+.find-screen__icons {
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+.find-screen__icon-row,
+.find-screen__icon-title-row {
+  display: flex;
+  width: 100%;
+}
+.find-screen__icon-column,
+.find-screen__icon-title-column {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.find-screen__icon-column i {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.find-screen__section {
+  border-top: var(--border);
+  padding-top: 18px;
+}
+.find-screen__section-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.35);
+}
+.find-screen__section-header--text {
+  color: rgba(0, 0, 0, 0.2);
+}
+.recommended-friends {
+  padding: 96px 0px;
+  text-align: center;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.35);
+}
+.open-chat {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.open-chat__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.open-chat__title {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.open-chat__tags {
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.35);
+  text-transform: uppercase;
+  margin: 7px 0px;
+}
+.open-chat__state {
+  display: flex;
+  align-items: center;
+}
+.open-chat__state img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.open-chat__state span {
+  margin: 0px 5px;
+}
+.open-chat__members {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.3);
+}
+.open-chat__state-partition {
+  width: 1px;
+  height: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.open-chat__active {
+  font-size: 14px;
+  color: tomato;
+}
+.open-chat__column:last-child img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+}
+.open-chat__heart-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  padding: 6px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.open-chat__heart-box i {
+  margin-right: 5px;
+  font-style: 10px;
+}
