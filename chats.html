@@ -11,8 +11,12 @@
     <!-- Status Bar -->
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>No Service</span>
-        <i class="fas fa-wifi"></i>
+        <span>Battle Mode</span>
+        <div class="pokeball">
+          <div class="pokeball__upside"></div>
+          <div class="pokeball__inner-circle"></div>
+          <div class="pokeball__downside"></div>
+        </div>
       </div>
       <div class="status-bar__column">
         <span>15:27</span>
@@ -24,79 +28,90 @@
       </div>
     </div>
 
-    <!-- Friends Screen Header -->
+    <!-- Screen Header -->
     <header class="screen-header">
       <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <i class="fas fa-search fa-sm"></i>
         <i class="far fa-comment-dots fa-sm"></i>
         <i class="fas fa-music fa-sm"></i>
-        <i class="fas fa-cog fa-sm"></i>
+        <a href="settings.html"><i class="fas fa-cog fa-sm"></i></a>
+        <div class="badge settings-notification"></div>
       </div>
     </header>
 
     <main class="main-screen">
       <!-- chat with myself -->
-      <div class="user-component">
-        <div class="user-component__column">
-          <img class="user-component__avatar" src="screenshots/pikachu.jpg" />
-          <div class="user-component__text">
-            <h3 class="user-component__title user-component__title--bold">
-              <div class="user-component__self">ME</div>
-              <span>Pikachu</span>
-            </h3>
-            <span class="user-component__subtitle">Pika Pika♡</span>
+      <a href="chat-screen__pikachu.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img class="user-component__avatar" src="screenshots/pikachu.jpg" />
+            <div class="user-component__text">
+              <h3 class="user-component__title user-component__title--bold">
+                <div class="user-component__self">ME</div>
+                <span>Pikachu</span>
+              </h3>
+              <span class="user-component__subtitle">Pika Pika♡</span>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">Yesterday</span>
+            <div class="badge badge__hidden user-component__notification">
+              1
+            </div>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">Yesterday</span>
-          <div class="badge badge__hidden user-component__notification">1</div>
-        </div>
-      </div>
+      </a>
       <div class="user-component__space"></div>
 
       <!-- chat with friend: 1 -->
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__avatar"
-            src="screenshots/charmander.jfif"
-          />
-          <div class="user-component__text">
-            <h3 class="user-component__title user-component__title--bold">
-              <span>Charmander</span>
-            </h3>
-            <span class="user-component__subtitle">Charrrr!!</span>
+      <a href="chat-screen__charmander.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar"
+              src="screenshots/charmander.jfif"
+            />
+            <div class="user-component__text">
+              <h3 class="user-component__title user-component__title--bold">
+                <span>Charmander</span>
+              </h3>
+              <span class="user-component__subtitle">Charrrr!!</span>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">17:58</span>
+            <div class="badge user-component__notification">1</div>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">17:58</span>
-          <div class="badge user-component__notification">1</div>
-        </div>
-      </div>
+      </a>
       <div class="user-component__space"></div>
 
       <!-- chat with friend: 2 -->
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__avatar"
-            src="screenshots/bulbasaur.jfif"
-          />
-          <div class="user-component__text">
-            <h3 class="user-component__title user-component__title--bold">
-              <span>Bulbasaur</span>
-            </h3>
-            <span class="user-component__subtitle">Bulbasaur...</span>
+      <a href="chat-screen__bulbasaur.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar"
+              src="screenshots/bulbasaur.jfif"
+            />
+            <div class="user-component__text">
+              <h3 class="user-component__title user-component__title--bold">
+                <span>Bulbasaur</span>
+              </h3>
+              <span class="user-component__subtitle">Bulbasaur...</span>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">11:02</span>
+            <div class="badge user-component__notification">3</div>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">14:23</span>
-          <div class="badge user-component__notification">3</div>
-        </div>
-      </div>
+      </a>
       <div class="user-component__space"></div>
     </main>
+
+    <img class="chats-background" src="screenshots/background-chats.png" />
 
     <!-- navigation bar -->
     <nav class="nav">
@@ -121,9 +136,16 @@
           <a class="nav__a" href="more.html"
             ><i class="fas fa-ellipsis-h fa-lg"></i
           ></a>
+          <div class="badge nav__more-notification"></div>
         </li>
       </ul>
     </nav>
+
+    <div class="no-mobile">
+      <p class="no-mobile__pika-lang">Pika Pi!</p>
+      <p class="no-mobile__human-lang">(Your Screen Is Too Big)</p>
+      <img src="screenshots/no-mobile.png" />
+    </div>
 
     <!-- Font Awesome: For Icons -->
     <script

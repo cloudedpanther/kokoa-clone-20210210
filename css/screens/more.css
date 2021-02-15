@@ -8,12 +8,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .more-screen__icon-column span {
   margin-top: 16px;
   font-size: 13px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.5);
+}
+.more-screen__icon-notification {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  right: 3px;
+  top: -7px;
 }
 .more-screen__icon-space {
   width: 58px;

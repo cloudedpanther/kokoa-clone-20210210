@@ -1,0 +1,26 @@
+.no-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 99;
+  top: 0px;
+  font-size: 45px;
+}
+.no-mobile img {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 260px;
+  height: 270px;
+}
+
+@media screen and (max-width: 650px) {
+  .no-mobile {
+    display: none;
+  }
+}

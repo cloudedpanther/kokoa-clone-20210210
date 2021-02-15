@@ -11,8 +11,12 @@
     <!-- Status Bar -->
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>No Service</span>
-        <i class="fas fa-wifi"></i>
+        <span>Battle Mode</span>
+        <div class="pokeball">
+          <div class="pokeball__upside"></div>
+          <div class="pokeball__inner-circle"></div>
+          <div class="pokeball__downside"></div>
+        </div>
       </div>
       <div class="status-bar__column">
         <span>15:27</span>
@@ -24,13 +28,14 @@
       </div>
     </div>
 
-    <!-- Friends Screen Header -->
+    <!-- Screen Header -->
     <header class="screen-header">
       <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <i class="fas fa-search fa-sm"></i>
         <i class="fas fa-music fa-sm"></i>
-        <i class="fas fa-cog fa-sm"></i>
+        <a href="settings.html"><i class="fas fa-cog fa-sm"></i></a>
+        <div class="badge settings-notification"></div>
       </div>
     </header>
 
@@ -65,6 +70,7 @@
           <div class="more-screen__icon-column">
             <i class="fas fa-archive fa-2x"></i>
             <span>Talk Drive</span>
+            <div class="badge more-screen__icon-notification"></div>
           </div>
           <div class="more-screen__icon-column">
             <i class="far fa-grin-tongue-wink fa-2x"></i>
@@ -125,6 +131,9 @@
       </div>
     </main>
 
+    <img class="more-background" src="screenshots/background-more.png" />
+    <img class="more-background-2" src="screenshots/background-more-2.png" />
+
     <!-- navigation bar -->
     <nav class="nav">
       <ul class="nav__ul">
@@ -148,9 +157,16 @@
           <a class="nav__a" href="more.html"
             ><i class="fas fa-ellipsis-h fa-lg"></i
           ></a>
+          <div class="badge nav__more-notification"></div>
         </li>
       </ul>
     </nav>
+
+    <div class="no-mobile">
+      <p class="no-mobile__pika-lang">Pika Pi!</p>
+      <p class="no-mobile__human-lang">(Your Screen Is Too Big)</p>
+      <img src="screenshots/no-mobile.png" />
+    </div>
 
     <!-- Font Awesome: For Icons -->
     <script

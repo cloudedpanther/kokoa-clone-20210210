@@ -1,0 +1,22 @@
+.alt-screen-header {
+  margin-top: 38px;
+  padding: 0px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+.alt-screen-header__column {
+  width: 33%;
+  display: flex;
+}
+.alt-screen-header__column:nth-child(2) {
+  justify-content: center;
+}
+.alt-screen-header__column:last-child {
+  justify-content: flex-end;
+}
+.alt-screen-header__column:last-child i {
+  margin-left: 24px;
+}

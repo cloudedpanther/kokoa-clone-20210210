@@ -3,12 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 /* components */
-@import "components/background-field.css";
+@import "components/background-characters.css";
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
+@import "components/alt-screen-header.css";
+@import "components/splash-screen.css";
+@import "components/pokeball.css";
+@import "components/no-mobile.css";
 
 /* screens */
 @import "screens/login.css";
@@ -16,11 +20,12 @@
 @import "screens/chats.css";
 @import "screens/find.css";
 @import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat-screen.css";
 
 body {
   font-family: "Roboto", sans-serif;
   color: var(--black);
-  height: 200vh;
 }
 input {
   font-family: "Roboto", sans-serif;

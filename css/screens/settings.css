@@ -1,0 +1,23 @@
+.settings-settings {
+  margin-top: 44px;
+}
+.settings-settings__section {
+  padding: 0px 24px;
+  margin-bottom: 40px;
+}
+.settings-settings__section:first-child {
+  border-bottom: var(--border);
+}
+.settings-settings__row {
+  margin-bottom: 40px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+.settings-settings__column:last-child {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+}
+.settings-settings__column i {
+  margin-right: 20px;
+}

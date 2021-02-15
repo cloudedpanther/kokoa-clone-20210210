@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>PokeTalk - Chat With Charmander</title>
+  </head>
+  <body class="chat-screen">
+    <!-- Status Bar -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>Battle Mode</span>
+        <div class="pokeball">
+          <div class="pokeball__upside"></div>
+          <div class="pokeball__inner-circle"></div>
+          <div class="pokeball__downside"></div>
+        </div>
+      </div>
+      <div class="status-bar__column">
+        <span>15:27</span>
+      </div>
+      <div class="status-bar__column">
+        <span>999%</span>
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <!-- Screen Header -->
+    <header class="alt-screen-header">
+      <div class="alt-screen-header__column">
+        <a href="chats.html"><i class="fas fa-chevron-left"></i></a>
+      </div>
+      <div class="alt-screen-header__column">
+        <h2>Charmander</h2>
+      </div>
+      <div class="alt-screen-header__column">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main class="main-screen chat-main">
+      <div class="chat-screen__time-stamp">Tuesday, February 16, 2021</div>
+      <div class="chat-row">
+        <img class="chat-row__avatar" src="screenshots/charmander.jfif" />
+        <div class="chat-row__text">
+          <span class="chat-row__name">Charmander</span>
+          <div class="chat-row__contents">
+            <span class="chat-row__message">Charrr?</span>
+            <span class="chat-row__time">09:15</span>
+          </div>
+        </div>
+      </div>
+      <div class="chat-row chat-row--own">
+        <div class="chat-row__text">
+          <div class="chat-row__contents">
+            <span class="chat-row__time">09:17</span>
+            <span class="chat-row__message">Pika, Pi!</span>
+          </div>
+        </div>
+      </div>
+      <div class="chat-row">
+        <img class="chat-row__avatar" src="screenshots/charmander.jfif" />
+        <div class="chat-row__text">
+          <span class="chat-row__name">Charmander</span>
+          <div class="chat-row__contents">
+            <span class="chat-row__message">Charrrr!!</span>
+            <span class="chat-row__time">17:58</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-2x"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write A Message..." />
+        <i class="far fa-smile fa-2x"></i>
+        <button class="reply__btn">
+          <i class="fas fa-arrow-up fa-2x"></i>
+        </button>
+      </div>
+    </form>
+
+    <div class="no-mobile">
+      <p class="no-mobile__pika-lang">Pika Pi!</p>
+      <p class="no-mobile__human-lang">(Your Screen Is Too Big)</p>
+      <img src="screenshots/no-mobile.png" />
+    </div>
+
+    <!-- Font Awesome: For Icons -->
+    <script
+      src="https://kit.fontawesome.com/fab31d5aa0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -8,6 +8,31 @@
 .screen-header__title {
   font-weight: 700;
 }
+.screen-header__icons {
+  position: relative;
+}
 .screen-header__icons i {
   margin-left: 22px;
+}
+.settings-notification {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  right: -5px;
+  top: 0px;
+}
+@keyframes rotateCog {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCog 2s linear infinite;
 }

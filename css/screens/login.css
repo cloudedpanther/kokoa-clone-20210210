@@ -40,9 +40,8 @@
   color: rgba(0, 0, 0, 0.3);
   font-size: 18px;
 }
-/* #FAE100 */
 .login-form input:focus {
-  border-color: var(--red);
+  border-color: var(--yellow);
 }
 .login-form input[type="submit"] {
   margin-top: 14px;
@@ -51,10 +50,10 @@
   cursor: pointer;
 }
 .login-form input[name="login"] {
-  background-color: #55efc4;
+  background-color: var(--yellow);
 }
 .login-form input[name="signup"] {
-  background-color: #f39c12;
+  background-color: var(--yellow);
 }
 .login-form a {
   text-align: center;

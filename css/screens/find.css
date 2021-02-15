@@ -107,3 +107,21 @@
   margin-right: 5px;
   font-style: 10px;
 }
+@keyframes heartbeat {
+  0% {
+    color: white;
+    transform: scale(1);
+  }
+  50% {
+    color: tomato;
+    transform: scale(2);
+  }
+  100% {
+    color: white;
+    transform: scale(1);
+  }
+}
+.open-chat__heart-box i:hover {
+  will-change: transform;
+  animation: heartbeat 1s ease-in-out infinite;
+}
